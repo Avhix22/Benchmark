@@ -26,3 +26,9 @@ int main() {
         fwrite(buffer, sizeof(char), CHUNK_SIZE, file);
     }
     fclose(file);
+
+    // Reading from a file
+    file = fopen("test_file_1.dat", "rb");
+    if (!file) {
+        printf("Error: Unable to open file for reading.\n");
+        return 1;
