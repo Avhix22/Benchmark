@@ -10,3 +10,7 @@ int main() {
     clock_t start, end;
     FILE *file;
     char buffer[CHUNK_SIZE];
+
+    printf("Benchmark 5:\n");
+    printf("Hard Drive benchmark 2\n");
+    printf("Which includes reading from, and writing to file, 10000 bytes each time\n");
