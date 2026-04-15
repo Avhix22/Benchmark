@@ -5,3 +5,8 @@ hard_drive_benchmark_2.c
 
 #define FILE_SIZE 1000000000LL  // 1 GB
 #define CHUNK_SIZE 10000        // 10,000 bytes per read/write
+
+int main() {
+    clock_t start, end;
+    FILE *file;
+    char buffer[CHUNK_SIZE];
