@@ -8,3 +8,10 @@ int main() {
     printf("Benchmark 2:\n");
     printf("64-bit Floating point operation benchmark\n");
     printf("Which includes additions, multiplication, and division.\n");
+
+    // Initialize buffer
+    for (int i = 0; i < CHUNK_SIZE; i++) {
+        buffer[i] = 'A';
+    }
+
+    start = clock();
