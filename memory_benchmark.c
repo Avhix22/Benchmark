@@ -33,3 +33,7 @@ int main() {
     for (long long i = 0; i < SIZE; i++) {
         volatile int temp = arr[i];
     }
+
+    end = clock();
+    double execution_time = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Execution Time: %.4f seconds\n", execution_time);
