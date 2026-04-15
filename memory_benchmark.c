@@ -28,3 +28,8 @@ int main() {
     for (long long i = 0; i < SIZE; i++) {
         arr[i] = i;
     }
+
+    // Reading from array
+    for (long long i = 0; i < SIZE; i++) {
+        volatile int temp = arr[i];
+    }
