@@ -15,3 +15,11 @@ int main() {
     for (i = 0; i < 100000000; i++) {
         sum += i;
     }
+    //Multiplication Benchmark
+    for (i = 0; i < 5000000000LL; i++) {
+        product *= 2;
+    }
+    //Division Benchmark
+    for (i = 1; i < 2000000000LL; i++) {
+        quotient /= 2;
+    }
