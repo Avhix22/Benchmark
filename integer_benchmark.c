@@ -8,3 +8,10 @@ int main() {
     printf("Benchmark 1:\n");
     printf("32-bit Integer Operation Benchmark\n");
     printf("This includes additions, multiplications, and divisions.\n\n");
+
+    start = clock();
+
+    // Addition Benchmark
+    for (i = 0; i < 100000000; i++) {
+        sum += i;
+    }
