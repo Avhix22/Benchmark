@@ -16,3 +16,10 @@ int main() {
         printf("Memory allocation failed\n");
         return 1;
     }
+
+    // Print benchmark description
+    printf("Benchmark 3:\n");
+    printf("Memory benchmark\n");
+    printf("Which includes reading from, and writing to array, 4 bytes each time\n");
+
+    
