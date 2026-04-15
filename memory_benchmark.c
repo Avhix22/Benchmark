@@ -11,3 +11,8 @@ above are my code. i created a file in my friends laptop what should i do now
 int main() {
     clock_t start, end;
     int *arr = (int*) malloc(SIZE * sizeof(int));
+
+    if (!arr) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
