@@ -22,4 +22,9 @@ int main() {
     printf("Memory benchmark\n");
     printf("Which includes reading from, and writing to array, 4 bytes each time\n");
 
-    
+    start = clock();
+
+    // Writing to array
+    for (long long i = 0; i < SIZE; i++) {
+        arr[i] = i;
+    }
