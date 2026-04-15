@@ -37,3 +37,7 @@ int main() {
     end = clock();
     double execution_time = ((double)(end - start)) / CLOCKS_PER_SEC;
     printf("Execution Time: %.4f seconds\n", execution_time);
+
+    free(arr);
+    return 0;
+}
