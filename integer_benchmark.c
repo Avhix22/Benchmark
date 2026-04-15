@@ -23,3 +23,9 @@ int main() {
     for (i = 1; i < 2000000000LL; i++) {
         quotient /= 2;
     }
+    end = clock();
+    double execution_time = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Execution Time: %.4f seconds\n", execution_time);
+
+    return 0;
+}
