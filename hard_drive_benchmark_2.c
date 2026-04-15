@@ -38,3 +38,8 @@ int main() {
     if (!file) {
         printf("Error: Unable to open file for reading.\n");
         return 1;
+}
+    while (fread(buffer, sizeof(char), CHUNK_SIZE, file));
+    fclose(file);
+
+    end = clock();
