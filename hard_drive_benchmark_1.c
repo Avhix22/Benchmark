@@ -9,3 +9,7 @@ int main() {
     clock_t start, end;
     FILE *file;
     char buffer[CHUNK_SIZE];
+
+    printf("Benchmark 4:\n");
+    printf("Hard Drive benchmark 1\n");
+    printf("Which includes reading from, and writing to file, 100 bytes each time\n");
