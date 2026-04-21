@@ -13,3 +13,10 @@ int main() {
     printf("Benchmark 4:\n");
     printf("Hard Drive benchmark 1\n");
     printf("Which includes reading from, and writing to file, 100 bytes each time\n");
+
+    // Initialize buffer
+    for (int i = 0; i < CHUNK_SIZE; i++) {
+        buffer[i] = 'A';
+    }
+
+    start = clock();
