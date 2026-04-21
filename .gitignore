@@ -1,1 +1,7 @@
 *.save
+*.dat
+integer_benchmark
+float_benchmark
+memory_benchmark
+hard_drive_benchmark_1
+hard_drive_benchmark_2
