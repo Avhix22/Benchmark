@@ -20,3 +20,9 @@ int main() {
     }
 
     start = clock();
+
+    // Writing to a file
+    file = fopen("test_file_1.dat", "wb");
+    if (!file) {
+        printf("Error: Unable to create file.\n");
+        return 1;
