@@ -9,37 +9,24 @@ int main() {
     printf("64-bit Floating point operation benchmark\n");
     printf("Which includes additions, multiplication, and division.\n");
 
-    // Initialize buffer
-    for (int i = 0; i < CHUNK_SIZE; i++) {
-        buffer[i] = 'A';
-    }
-
     start = clock();
 
-    // Writing to a file
-    file = fopen("test_file_1.dat", "wb");
-    if (!file) {
-        printf("Error: Unable to create file.\n");
-        return 1;
-        }
-    for (long long i = 0; i < FILE_SIZE / CHUNK_SIZE; i++) {
-        fwrite(buffer, sizeof(char), CHUNK_SIZE, file);
+    // Addition Benchmark
+    for (i = 0; i < 1000000000.0; i++) {
+        sum += i;
     }
-    fclose(file);
-
-    // Reading from a file
-    file = fopen("test_file_1.dat", "rb");
-    if (!file) {
-        printf("Error: Unable to open file for reading.\n");
-        return 1;
-        }
-    while (fread(buffer, sizeof(char), CHUNK_SIZE, file));
-    fclose(file);
+    // Multiplication Benchmark
+    for (i = 0; i < 5000000000.0; i++) {
+        product *= 2.0;
+    }
+    // Division Benchmark
+    for (i = 1; i < 2000000000.0; i++) {
+        quotient /= 2.0;
+    }
 
     end = clock();
-
     double execution_time = ((double)(end - start)) / CLOCKS_PER_SEC;
-    printf("Execution Time: %.6f seconds\n", execution_time);
+    printf("Execution Time: %.4f seconds\n", execution_time);
 
     return 0;
 }
