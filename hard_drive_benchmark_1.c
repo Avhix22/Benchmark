@@ -26,3 +26,8 @@ int main() {
     if (!file) {
         printf("Error: Unable to create file.\n");
         return 1;
+         }
+    for (long long i = 0; i < FILE_SIZE / CHUNK_SIZE; i++) {
+        fwrite(buffer, sizeof(char), CHUNK_SIZE, file);
+    }
+    fclose(file);
